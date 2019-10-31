@@ -1,0 +1,93 @@
+import time
+name = input ("Please enter a name and press enter: ")
+print ("")
+birthYear = int(input("Please type your birth year and press enter: "))
+print ("")
+birthDate = int(input("Please type your birth month/date (MMDD) and press enter: "))
+print ("")
+time.sleep(1)
+randomNumber = 0
+pin = int(input("Please type a 4 digit pin and press enter (Make sure not to use 0 as first digit): "))
+print ("")
+time.sleep(1)
+print ("Alright", name,"your pin is", pin)
+print ("")
+time.sleep(1)
+print ("The program will now attempt to find your pin...")
+print ("")
+time.sleep(1)
+startTime = time.time()
+if (pin <= 1000):
+  print ("Your pin is not a 4 digit code, please try again.")
+  print ("")
+if (pin >= 10000):
+  print ("Your pin is not a 4 digit code, please try again.")
+  print ("")
+while (pin >= 1000):
+ if (pin >= 10000):
+   break
+ randomNumber =  randomNumber + 1
+ print ("Attempting pin: ", randomNumber)
+ print ("")
+ if (randomNumber == pin):
+   print ("Your pin is", pin)
+   print ("")
+   print ("The program is now complete.")
+   print ("")
+   break
+ print ("Pin is incorrect")
+ print ("")
+ if (pin == birthDate):
+   print ("Can't use Birth Day as pin")
+   print ("")
+   break
+ if (pin == birthYear):
+   print ("Can't use Birth Year as pin")
+   print ("")
+   break
+ if (pin == 1111):
+   print ("Too basic number! 1111")
+   print ("")
+   break
+ if (pin == 2222):
+   print ("Too basic number! 2222")
+   print ("")
+   break
+ if (pin == 3333):
+   print ("Too basic number! 3333")
+   print ("")
+   break
+ if (pin == 4444):
+   print ("Too basic number! 4444")
+   print ("")
+   break
+ if (pin == 5555):
+   print ("Too basic number! 5555")
+   print ("")
+   break
+ if (pin == 6666):
+   print ("Too basic number! 6666")
+   print ("")
+   break
+ if (pin == 7777):
+   print ("Too basic number! 7777")
+   break
+ if (pin == 8888):
+   print ("Too basic number! 8888")
+   print ("")
+   break
+ if (pin == 9999):
+   print ("Too basic number! 9999")
+   print ("")
+   break
+ if (pin == 1234):
+   print ("Too basic number! 1234")
+   print ("")
+   break
+ if (pin == 4321):
+   print ("Too basic number! 4321")
+   print ("")
+   break
+endTime = time.time()
+properTime = (endTime - startTime)
+print ("The program took about", properTime,"seconds to find your 4 digit pin...")
