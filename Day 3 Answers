@@ -1,0 +1,82 @@
+numberOfCircles = 0
+import turtle
+while 1 == 1:
+ circleCount = input("How many circles do you want?")
+ if str.isdigit(circleCount):
+    circleCount = int(circleCount)
+    if (circleCount) <= 5:
+     if (circleCount) >= 1:
+       break
+    if (circleCount > 5):
+     print ("Please enter a number between 1 and 5")
+    if (circleCount == 0):
+     print ("Please enter a number between 1 and 5")
+ if not str.isdigit(circleCount):
+   print ("Please enter a number and try again")
+c = turtle.Turtle()
+c.speed(1)
+while numberOfCircles < circleCount:
+  numberOfCircles = numberOfCircles + 1
+  c.speed(-1)
+  c.circle(30)
+  if numberOfCircles == 2:
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(-100)
+   c.down()
+  if numberOfCircles == 3:
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(-200)
+   c.down()
+  if numberOfCircles == 4:
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(-300)
+   c.down()
+  if numberOfCircles == 5:
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(100)
+   c.down()
+   c.circle(30)
+   c.up()
+   c.forward(-400)
+   c.down()
+  c.right(90)
+  c.up()
+  c.forward(100)
+  c.down()
+  c.left(90)
